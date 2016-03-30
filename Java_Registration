@@ -26,8 +26,17 @@ public class RegistrationScreen extends Activity {
 		final EditText t2 = (EditText) findViewById(R.id.Password);
 
 		 */
+		reg.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				// write code to connect to the net page
+				 Intent regscreen = new Intent(RegistrationScreen.this, ProfileScreen.class);
+				startActivity(regscreen);
+			}
 		
 		
-		
+	});
 	}
 }
